@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+    background-color: #080808;
+    color: white;
+    scroll-behavior: smooth;
+}
+
+a {
+    color: yellow;
+    text-decoration: none;
+}
+
+/* Header Styles */
+#header {
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.container {
+    padding: 10px 10%;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo {
+    width: 140px;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a {
+    position: relative;
+    font-size: 18px;
+}
+
+nav ul li a::after {
+    content: '';
+    width: 100%;
+    height: 3px;
+    background-color: red;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: width 0.5s;
+}
+
+nav ul li a:hover::after {
+    width: 0;
+}
+
+.header-text {
+    margin-top: 10%;
+    text-align: center;
+    font-size: 30px;
+}
+
+.header-text h1 {
+    font-size: 60px;
+    color: yellow;
+}
+
+/* Saiyans Section */
+#saiyans {
+    padding: 80px 0;
+    background: url(images/Characters.jpg) no-repeat center;
+    background-size: cover;
+    text-align: center;
+}
+
+#saiyans h1 {
+    font-size: 60px;
+    color: yellow;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.content {
+    width: 20%;
+    margin: 15px;
+    padding: 2%;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    transition: transform 0.4s, box-shadow 0.4s;
+    background: #fff;
+}
+
+.content:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+#saiyans img {
+    width: 200px;
+    height: 200px;
+    display: block;
+    margin: 0 auto;
+}
+
+h4 {
+    color: red;
+}
+
+/* Dragonballs Section */
+#dragonballs, #seasons {
+    padding: 2% 7%;
+}
+
+#dragonballs h1, #seasons h1 {
+    font-size: 50px;
+    color: yellow;
+    text-align: center;
+}
+
+#heading, #title {
+    font-size: 25px;
+    text-align: center;
+    padding-top: 2%;
+}
+
+.balls {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.balls img {
+    width: 250px;
+    height: auto;
+}
+
+.balls p {
+    font-size: 20px;
+    padding: 0 20px;
+}
+
+/* Seasons Section */
+.info p {
+    font-size: 20px;
+    padding-top: 2%;
+}
+
+.info iframe {
+    width: 700px;
+    height: 450px;
+}
